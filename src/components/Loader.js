@@ -1,10 +1,17 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
+
 
 
 
 const Loader = () => {
-  return <div id='loader' className='section'>Contact</div>;
+  useEffect(()=>{
+    
+  })
+  return <div id='loader' className='section'>
+  
+  
+  </div>;
 };
 
 export default Loader;

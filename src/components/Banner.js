@@ -28,12 +28,12 @@ const Banner = () => {
            className="mb-6 text-[36px] lg:text-[60px]   uppercase leading-[1]">
               <span className="mr-4">I am a </span>
               <TypeAnimation sequence={[
-            'Developer',
+            'Web Developer',
             2000,
             'Digital Marketing',
             2000,
-            'Youtuber',
-            2000, ]}
+            'graphic designer',
+            2000, ]}bv
 
              speed={50}
              className="text-cyan-400 fw3 "

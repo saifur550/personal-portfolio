@@ -14,7 +14,15 @@ const About = () => {
       <div className='container mx-auto'>
         <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
          { /* img content start  */} 
-         <div className='
+         <motion.div
+
+         variants = {fadeIn('right', 0.3)}
+         initial="hidden"
+         whileInView={'show'}
+         viewport={{once:false,amount:0.3}}
+         
+         
+         className='
          flex-1
          bg-about
          bg-contain 
@@ -22,9 +30,16 @@ const About = () => {
          h-[640px]
          mix-blend-lighten 
          bg-top'>
-         </div>
+         </motion.div>
            
-          <div className='flex-1'>
+          <motion.div
+
+          variants = {fadeIn('left', 0.5)}
+          initial="hidden"
+          whileInView={'show'}
+          viewport={{once:false,amount:0.3}}
+          
+          className='flex-1'>
             { /* text-info start */} 
             <h2 className='h2 text-cyan-400 '>About Me</h2>
             <h3 className='mb-4'>
@@ -75,7 +90,7 @@ const About = () => {
               My Protfolio
              </a>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
